@@ -1,4 +1,4 @@
-Feature: Allow the user to select the select products
+Feature: Allow the user to select products
 
 
   Scenario Outline: As a user, I add the products to the cart

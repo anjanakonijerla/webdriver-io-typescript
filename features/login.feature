@@ -12,4 +12,4 @@ Feature: Allow the user to login
 
     Examples:
       | username         | password            | name               |
-      | Stowipro@123.com | towipro_123@123.com | FirstName LastName |
+      | Ztowipro@123.com | towipro_123@123.com | FirstName LastName |

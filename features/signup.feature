@@ -11,6 +11,6 @@ Feature: Allow the user to Signup
 
     Examples:
       | email            | password            | firstname | lastname | message                  |
-      | Ntowipro@123.com | towipro_123@123.com | FirstName | LastName | Welcome to your account. |
+      | Xtowipro@123.com | towipro_123@123.com | FirstName | LastName | Welcome to your account. |
 
 
