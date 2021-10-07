@@ -17,7 +17,7 @@ class ProductPage extends Page {
     get inputQuantity () { return $('input[id="quantity_wanted"]') }
     get selectSize () { return $('#group_1') }
     get btnSubmitAddToCart () { return $('#add_to_cart')}
-    get GoToCart () { return $('#View my shopping cart')}
+    get GoToCart () { return $('a[title="View my shopping cart"]')}
     get closeWindow() { return $('span[title="Close window"]')}
    
     async searchQuery (product: string) {

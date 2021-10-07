@@ -8,18 +8,24 @@ class OrdersPage extends Page {
      * define selectors using getter methods
      */
 
-   
-   
-    get proceedTocheckout () { return $('#Proceed to checkout')}
-   
-   
-    async goToPayments () {
-        await this.proceedTocheckout.click
-
-    }
-
+    get proceedToCheckout () { return $('//span[text()="Proceed to checkout"]')}
+    get checkBoxAgreeAlert () { return $('intput[id="cgv"]')}
+    get orderPageAlert(){ return $('h1[id="cart_title"]') }
 
     
+      
+    async proceed () {
+        console.log("Clicking on proceedToCheckout")
+        var ele = this.proceedToCheckout
+        await ele.scrollIntoView();
+        await ele.moveTo();
+        await ele.click
+        console.log("Clicked on proceedToCheckout")
+    }
+    async checkBoxAgree () {
+        await this.checkBoxAgreeAlert.click
+    }
+
 
     /**
      * overwrite specifc options to adapt it to page object

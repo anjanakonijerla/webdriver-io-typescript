@@ -24,8 +24,8 @@ export const config: WebdriverIO.Config = {
     
     specs: [
        [
-        __dirname + '/features/**/signup.feature',
-        __dirname + '/features/**/login.feature',
+        // __dirname + '/features/**/signup.feature',
+        // __dirname + '/features/**/login.feature',
         __dirname + '/features/**/products.feature'
     ]
 

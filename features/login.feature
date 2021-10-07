@@ -1,4 +1,4 @@
-Feature: Allow the user to login
+Feature: Allow the user to login and logout
 
 
   Scenario Outline: As a user, I can log into the secure area

@@ -13,11 +13,13 @@ Given(/^The Home page is loaded$/, async () => {
 });
 
 When(/^I clicked on Signin link$/, async () => {
+    await expect(SignUpPage.signIn).toBeExisting();
     SignUpPage.clickSignInLink()
 });
 
 
 When(/^I signin with (.*) and (.*) with (.*) and (.*)$/, async (email,password,firstname,lastname) => {
+    await expect(SignUpPage.inputEmail).toBeExisting();
     await SignUpPage.signin(email)
     await expect(SignUpPage.FormAlert).toBeExisting();
     await expect(SignUpPage.emailAlert).toBeExisting();

@@ -1,4 +1,4 @@
-Feature: Allow the user to Signup
+Feature: Allow the user to Signup with email
 
 
   Scenario Outline: As a user, I can Register
