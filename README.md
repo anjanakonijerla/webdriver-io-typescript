@@ -10,7 +10,7 @@ Used technologies: (Below needs to be installed if not done alreday)
 ## How to run
 - check out the project
 - import into Visal Studio or your preferred IDE
-- one the terminal and rn below command
+- open the terminal and execute below command
 
 $  npx wdio run ./wdio.conf.ts; allure generate .\reports\allure-results --clean;  allure open;
 
