@@ -9,7 +9,7 @@ Feature: Allow the user to select products and Validate products on Payments pag
     And I search for the <product>
     And I add <quantity> of <product> to the cart of <size>
     And I proceed to cart and checkout and then payments page
-        # Then  I should have products in payments page <product> and <quantity>
+    Then  I should have products in payments page <product> and <quantity>
  
 
     Examples:

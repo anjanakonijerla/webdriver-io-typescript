@@ -11,7 +11,7 @@ class OrdersPage extends Page {
     get proceedToCheckout () { return $('//span[text()="Proceed to checkout"]')}
     get checkBoxAgreeAlert () { return $('intput[id="cgv"]')}
     get orderPageAlert(){ return $('h1[id="cart_title"]') }
-
+    get orderTable(){ return $('table[id="cart_summary"]') }
     
       
     async proceed () {
@@ -27,6 +27,7 @@ class OrdersPage extends Page {
     }
 
 
+    
     /**
      * overwrite specifc options to adapt it to page object
      */

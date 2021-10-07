@@ -48,5 +48,7 @@ Then(/^I proceed to cart and checkout and then payments page$/, async () => {
 
 
 Then(/^I should have products in payments page (.*) and (.*)$/, async (product,quantity) => {
-    // await ProductPage.searchQuery(product,quantity)
+    await expect(OrdersPage.orderTable).toBeExisting();
+    await expect(OrdersPage.orderTable.$$('td')[2].getText()).toHaveTextContaining(product)
+    await expect(OrdersPage.orderTable.$$('td')[5].getText()).toHaveTextContaining(quantity)
 });
